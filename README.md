@@ -16,14 +16,14 @@ __prerequisites__
 
 __pinout__
 
-| oled module | raspberry pi | meaning                       |
-| ---         | ---          | ---                           |
-| GND         | GND          | ground                        |
-| VCC         | 3.3V or 5V   | Voltage Collector Collector   |
-| SCL         | SPI CLK      | SPI clock                     |
-| SDA         | SPI MISO     | SPI data, Master In Slave Out |
-| RST         | GPIO_RST     | reset                         |
-| D/C         | GPIO_DC      | data/command                  |
+| oled module | raspberry pi   | meaning                       |
+| ---         | ---            | ---                           |
+| GND         | GND            | ground                        |
+| VCC         | 3.3V or 5V     | Voltage Collector Collector   |
+| SCL         | SCLK, SPI CLK  | SPI clock                     |
+| SDA         | MISO, SPI MISO | SPI data, Master In Slave Out |
+| RST         | GPIO_RST       | reset                         |
+| D/C         | GPIO_DC        | data/command                  |
 
 `GPIO_RST` and `GPIO_DC` can be any two GPIO pins.
 
