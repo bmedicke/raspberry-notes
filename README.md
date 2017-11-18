@@ -11,7 +11,7 @@
 
 __prerequisites__
 
-- Raspbian, not tested with raspbian-ua-netinst
+- Raspberry Pi running [Raspbian](https://www.raspberrypi.org/downloads/raspbian/), not tested with [raspbian ua netinst](https://github.com/debian-pi/raspbian-ua-netinst).
 
 __pinout__
 
@@ -26,7 +26,7 @@ __pinout__
 
 `GPIO_RST` and `GPIO_DC` can be any two GPIO pins.
 
-See [interactive pinout diagram](https://pinout.xyz).
+See [interactive pinout diagram](https://pinout.xyz) for the Raspberry Pi.
 
 __libraries__
 
@@ -50,7 +50,7 @@ cd luma.examples
 sudo -H pip install -e .
 ```
 
-_usage_
+__usage__
 
 ```sh
 # GPIO_RST: 23
