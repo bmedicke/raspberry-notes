@@ -12,6 +12,7 @@
 __prerequisites__
 
 - Raspberry Pi running [Raspbian](https://www.raspberrypi.org/downloads/raspbian/), not tested with [raspbian ua netinst](https://github.com/debian-pi/raspbian-ua-netinst).
+- enabled [SPI](https://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus) (via `raspi-config`, advanced options)
 
 __pinout__
 
