@@ -4,6 +4,9 @@
 <!-- vim-markdown-toc Redcarpet -->
 
 * [SSD1306 OLED (SPI version)](#ssd1306-oled-spi-version)
+* [automatic 8188eu based Wi-Fi driver install](#automatic-8188eu-based-wi-fi-driver-install)
+  * [managing networks with wicd](#managing-networks-with-wicd)
+* [install docker](#install-docker)
 
 <!-- vim-markdown-toc -->
 
@@ -58,4 +61,27 @@ __usage__
 # GPIO_DC: 24
 cd luma.examples/examples
 python3 terminal.py -i spi --gpio-data-command 24 --gpio-reset 23
+```
+
+## automatic 8188eu based Wi-Fi driver install
+
+https://www.raspberrypi.org/forums/viewtopic.php?f=28&t=62371
+
+```sh
+sudo wget http://www.fars-robotics.net/install-wifi -O /usr/bin/install-wifi
+sudo chmod +x /usr/bin/install-wifi
+```
+
+### managing networks with wicd
+
+```sh
+sudo apt-get install wicd-curses
+sudo wicd-curses
+```
+
+## install docker
+
+```sh
+curl https://get.docker.com | sh
+sudo systemctl enable docker
 ```
