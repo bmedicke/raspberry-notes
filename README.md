@@ -3,12 +3,15 @@
 
 <!-- vim-markdown-toc Redcarpet -->
 
-* [SSD1306 OLED (SPI version)](#ssd1306-oled-spi-version)
-* [automatic 8188eu based Wi-Fi driver install](#automatic-8188eu-based-wi-fi-driver-install)
-  * [managing networks with wicd](#managing-networks-with-wicd)
+* [hardware](#hardware)
+	* [SSD1306 OLED (SPI version)](#ssd1306-oled-spi-version)
+	* [automatic 8188eu based Wi-Fi driver install](#automatic-8188eu-based-wi-fi-driver-install)
+		* [managing networks with wicd](#managing-networks-with-wicd)
 * [install docker](#install-docker)
 
 <!-- vim-markdown-toc -->
+
+# hardware
 
 ## SSD1306 OLED (SPI version)
 
@@ -79,7 +82,7 @@ sudo apt-get install wicd-curses
 sudo wicd-curses
 ```
 
-## install docker
+# install docker
 
 ```sh
 curl https://get.docker.com | sh
