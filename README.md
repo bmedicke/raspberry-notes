@@ -4,6 +4,7 @@
 <!-- vim-markdown-toc Redcarpet -->
 
 * [hardware](#hardware)
+	* [under-voltage and other throttling reasons](#under-voltage-and-other-throttling-reasons)
 	* [SSD1306 OLED (SPI version)](#ssd1306-oled-spi-version)
 	* [automatic 8188eu based Wi-Fi driver install](#automatic-8188eu-based-wi-fi-driver-install)
 		* [managing networks with wicd](#managing-networks-with-wicd)
@@ -12,6 +13,50 @@
 <!-- vim-markdown-toc -->
 
 # hardware
+
+## under-voltage and other throttling reasons
+
+`vcgencmd` is a tool by Broadcom that can be used to query
+the VideoCore processor in a Raspberry Pi.
+VideoCore is a low-power mobile multimedia processor.
+
+```sh
+vcgencmd commands
+man vcgencmd
+```
+
+* query throttle state with `vcgencmd get_throttled`
+* this returns a bit pattern with the following meaning:
+
+```sh
+              Bit   Meaning
+              ────  ────────────────────────────────────
+         0    Under-voltage detected
+         1    Arm frequency capped
+         2    Currently throttled
+         3    Soft temperature limit active
+        16    Under-voltage has occurred
+        17    Arm frequency capping has occurred
+        18    Throttling has occurred
+        19    Soft temperature limit has occurred
+```
+
+example:
+
+```sh
+vcgencmd get_throttled
+# returns 0x50000
+
+python -c 'print(bin(0x500000))'
+# returns 0b1010000000000000000
+
+# counting from the right (zero-indexed):
+# bit 16 and 18 are set.
+
+# according to the table above:
+# 17    Arm frequency capping has occurred
+# 19    Soft temperature limit has occurred
+```
 
 ## SSD1306 OLED (SPI version)
 
