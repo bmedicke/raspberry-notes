@@ -4,7 +4,8 @@
 <!-- vim-markdown-toc Redcarpet -->
 
 * [hardware](#hardware)
-	* [under-voltage and other throttling reasons](#under-voltage-and-other-throttling-reasons)
+	* [vcgencmd](#vcgencmd)
+		* [under-voltage and other throttling reasons](#under-voltage-and-other-throttling-reasons)
 	* [SSD1306 OLED (SPI version)](#ssd1306-oled-spi-version)
 	* [automatic 8188eu based Wi-Fi driver install](#automatic-8188eu-based-wi-fi-driver-install)
 		* [managing networks with wicd](#managing-networks-with-wicd)
@@ -14,7 +15,9 @@
 
 # hardware
 
-## under-voltage and other throttling reasons
+## vcgencmd
+
+### under-voltage and other throttling reasons
 
 `vcgencmd` is a tool by Broadcom that can be used to query
 the VideoCore processor in a Raspberry Pi.
