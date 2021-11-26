@@ -17,11 +17,10 @@
 
 ## vcgencmd
 
-### under-voltage and other throttling reasons
-
 `vcgencmd` is a tool by Broadcom that can be used to query
 the VideoCore processor in a Raspberry Pi.
 VideoCore is a low-power mobile multimedia processor.
+### under-voltage and other throttling reasons
 
 ```sh
 vcgencmd commands
