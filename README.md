@@ -1,5 +1,10 @@
+**📓 [notes-network](https://github.com/bmedicke/notes-network) 🕸️**
+
+---
+
 # raspberry-notes
 
+## toc
 
 <!-- vim-markdown-toc Redcarpet -->
 
