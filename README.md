@@ -4,16 +4,18 @@
 
 # raspberry-notes
 
+* [Raspberry Pi in 100 seconds](https://www.youtube.com/watch?v=eZ74x6dVYes)
+
 ## toc
 
 <!-- vim-markdown-toc Redcarpet -->
 
 * [hardware](#hardware)
-	* [vcgencmd](#vcgencmd)
-		* [under-voltage and other throttling reasons](#under-voltage-and-other-throttling-reasons)
-	* [SSD1306 OLED (SPI version)](#ssd1306-oled-spi-version)
-	* [automatic 8188eu based Wi-Fi driver install](#automatic-8188eu-based-wi-fi-driver-install)
-		* [managing networks with wicd](#managing-networks-with-wicd)
+  * [vcgencmd](#vcgencmd)
+    * [under-voltage and other throttling reasons](#under-voltage-and-other-throttling-reasons)
+  * [SSD1306 OLED (SPI version)](#ssd1306-oled-spi-version)
+  * [automatic 8188eu based Wi-Fi driver install](#automatic-8188eu-based-wi-fi-driver-install)
+    * [managing networks with wicd](#managing-networks-with-wicd)
 * [install docker](#install-docker)
 
 <!-- vim-markdown-toc -->
