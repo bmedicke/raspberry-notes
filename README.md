@@ -136,6 +136,11 @@ sudo apt-get install wicd-curses
 sudo wicd-curses
 ```
 
+# realvnc server
+
+* increase client compabililty (tightvnc, etc.) by allowing legacy clients
+ * https://help.realvnc.com/hc/en-us/articles/10406396398877-How-do-I-connect-from-a-non-RealVNC-VNC-Viewer-to-RealVNC-Server-on-a-Raspberry-Pi-
+
 # install docker
 
 ```sh
